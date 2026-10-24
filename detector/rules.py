@@ -120,7 +120,7 @@ def detect_password_spray(
                     count=best_users,
                     first_seen=best_start.timestamp,
                     last_seen=max(f.timestamp for f in failures if timedelta(0) <= f.timestamp - best_start.timestamp <= window),
-                    message=f"Detected {best_users} failed login attempts from IP {ip} within {window}.",
+                    message = f"{best_users} different usernames tried from IP {ip} within {window}.",
                     usernames=usernames,
                 )
                 alerts.append(alert)
@@ -133,8 +133,41 @@ def detect_success_after_failures(
     min_failures: int = 5,
     window: timedelta = timedelta(minutes=10),
 ) -> list[Alert]:
-    """Flag a successful login preceded by `min_failures` or more failures from the same IP within `window`."""
-    raise NotImplementedError
+    alerts = []
+    events_by_ip = {}
+
+    for event in events:
+        events_by_ip.setdefault(event.ip, []).append(event)
+
+    for ip, ip_events in events_by_ip.items():
+        ip_events.sort(key=lambda e: e.timestamp)
+
+        for success in ip_events:
+            if not success.success:
+                continue
+
+            window_failures = []
+            for other in ip_events:
+                if not other.success and timedelta(0) <= success.timestamp - other.timestamp <= window:
+                    window_failures.append(other)
+            count = len(window_failures)
+
+            if count >= min_failures:
+                usernames = sorted({f.username for f in window_failures} | {success.username})
+                alert = Alert(
+                    rule="success_after_failures",
+                    severity="CRITICAL",
+                    ip=ip,
+                    count=count,
+                    first_seen=window_failures[0].timestamp,
+                    last_seen=success.timestamp,
+                    message=f"Logged in as {success.username} after {count} failed attempts from {ip}.",
+                    usernames=usernames,
+                )
+                alerts.append(alert)
+                break
+
+    return alerts
 
 
 def run_all_rules(events: list[LoginEvent]) -> list[Alert]:

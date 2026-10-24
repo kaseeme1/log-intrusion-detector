@@ -4,7 +4,7 @@
 
 A Python tool that reads Linux SSH authentication logs (`/var/log/auth.log`) and flags attacks the way a security operations (SOC) analyst would: brute-force attempts, password spraying, and the scariest one, a successful login right after a wave of failures.
 
-> **Status:** in progress. Parser and detection rules are being implemented; the test suite defines the expected behavior.
+> **Status:** Finished!
 
 ## What it detects
 
