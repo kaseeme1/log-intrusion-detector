@@ -19,7 +19,6 @@ Pieces of each line:
 """
 
 from __future__ import annotations
-
 import re
 from dataclasses import dataclass
 from datetime import datetime
@@ -60,8 +59,40 @@ LINE_PATTERN = re.compile(r"TODO")  # replace with your regex
 
 
 def parse_line(line: str, year: int = 2026) -> LoginEvent | None:
-    """Return a LoginEvent for an SSH login line, or None for anything else."""
-    raise NotImplementedError("Kaseem: write parse_line (see hints above)")
+    if not ("Failed" in line or "Accepted" in line):
+        return None
+
+    Data = line.strip();
+    Parsed_Data = Data.split();
+
+    username = Parsed_Data[8]
+    ip = Parsed_Data[10]    
+
+    Success = True if Parsed_Data[5] == "Accepted" else False
+
+    invalid_user = True if Parsed_Data[8] == "invalid" else False
+
+    if invalid_user:
+        username = Parsed_Data[10]
+        ip = Parsed_Data[12]
+    else:
+        username = Parsed_Data[8]
+        ip = Parsed_Data[10]
+
+
+    
+    timestamp = datetime.strptime(f"{year} {Parsed_Data[0]} {Parsed_Data[1]} {Parsed_Data[2]}", "%Y %b %d %H:%M:%S")
+
+    return LoginEvent(
+        timestamp=timestamp,
+        ip=ip,
+        username=username,
+        success=Success,
+        invalid_user=invalid_user
+    )
+
+
+    
 
 
 # ---------------------------------------------------------------------------
