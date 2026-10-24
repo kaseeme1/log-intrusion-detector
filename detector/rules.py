@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from asyncio import events
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 
@@ -83,9 +84,48 @@ def detect_password_spray(
     events: list[LoginEvent],
     min_users: int = 5,
     window: timedelta = timedelta(minutes=10),
-) -> list[Alert]:
-    """Flag IPs that fail against `min_users` or more distinct usernames within `window`."""
-    raise NotImplementedError
+) -> list[Alert]: 
+        alerts = []
+        failures_by_ip = {}
+    
+        for event in events:
+            if event.success:
+                continue
+            failures_by_ip.setdefault(event.ip, []).append(event)
+    
+        for ip, failures in failures_by_ip.items():
+            best_count = 0
+            best_start = None
+            best_users = 0
+
+            for start in failures:
+                count = 0
+                users = set()
+    
+                for other in failures:
+                    if timedelta(0) <= other.timestamp - start.timestamp <= window:
+                        count += 1
+                        users.add(other.username)
+                if len(users) > best_users:
+                    best_users = len(users)
+                    best_count = count
+                    best_start = start
+    
+            if best_users >= min_users:
+                usernames = sorted({f.username for f in failures if timedelta(0) <= f.timestamp - best_start.timestamp <= window})
+                alert = Alert(
+                    rule="password_spray",
+                    severity="HIGH",
+                    ip=ip,
+                    count=best_users,
+                    first_seen=best_start.timestamp,
+                    last_seen=max(f.timestamp for f in failures if timedelta(0) <= f.timestamp - best_start.timestamp <= window),
+                    message=f"Detected {best_users} failed login attempts from IP {ip} within {window}.",
+                    usernames=usernames,
+                )
+                alerts.append(alert)
+    
+        return alerts
 
 
 def detect_success_after_failures(
