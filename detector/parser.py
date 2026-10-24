@@ -64,6 +64,9 @@ def parse_line(line: str, year: int = 2026) -> LoginEvent | None:
 
     Data = line.strip();
     Parsed_Data = Data.split();
+    
+    if not ( Parsed_Data[5].startswith("sshd")):
+        return None
 
     username = Parsed_Data[8]
     ip = Parsed_Data[10]    

@@ -89,6 +89,13 @@ python scripts/generate_sample_log.py --seed 42
 - Auto-generate firewall block rules (`ufw` / `iptables`) for flagged IPs
 - Watch mode that tails the log live and alerts in real time
 
+
+## How this was built
+
+Project scaffolding (test suite, sample-data generator, Docker, and CI pipeline)
+was set up with help from an AI assistant. The log parser and detection logic
+were written by me. I believe in using AI as a tool but not fully creating everything. It 100% important to understand what's going on. 
+
 ## License
 
 MIT
