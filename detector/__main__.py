@@ -1,15 +1,4 @@
-"""
-Command-line entry point.
-
-    python -m detector sample_logs/auth.log
-    python -m detector sample_logs/auth.log --json report.json
-    python -m detector /var/log/auth.log --year 2026 --fail-on-critical
-
-Exit codes (handy for scripts and CI pipelines):
-    0  ran fine (or no CRITICAL alerts when --fail-on-critical is set)
-    1  bad input (file missing, etc.)
-    2  CRITICAL alert found and --fail-on-critical was set
-"""
+"""Command-line entry point: python -m detector <logfile>"""
 
 from __future__ import annotations
 
@@ -21,6 +10,10 @@ from pathlib import Path
 from detector.parser import parse_file
 from detector.report import format_report, should_use_color, write_json
 from detector.rules import run_all_rules
+
+EXIT_OK = 0
+EXIT_BAD_INPUT = 1
+EXIT_CRITICAL_FOUND = 2
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
@@ -44,7 +37,7 @@ def main(argv: list[str] | None = None) -> int:
     path = Path(args.logfile)
     if not path.is_file():
         print(f"error: log file not found: {path}", file=sys.stderr)
-        return 1
+        return EXIT_BAD_INPUT
 
     events = parse_file(path, year=args.year)
     alerts = run_all_rules(events)
@@ -57,8 +50,8 @@ def main(argv: list[str] | None = None) -> int:
         print(f"JSON report written to {args.json}")
 
     if args.fail_on_critical and any(a.severity == "CRITICAL" for a in alerts):
-        return 2
-    return 0
+        return EXIT_CRITICAL_FOUND
+    return EXIT_OK
 
 
 if __name__ == "__main__":

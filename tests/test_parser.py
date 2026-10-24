@@ -8,8 +8,6 @@ from detector.parser import LoginEvent, parse_file, parse_line
 SAMPLE_LOG = Path(__file__).resolve().parent.parent / "sample_logs" / "auth.log"
 
 
-# --- lines that ARE login attempts -------------------------------------------
-
 def test_failed_password():
     line = "Oct 24 14:02:11 web01 sshd[2231]: Failed password for root from 203.0.113.45 port 52344 ssh2"
     assert parse_line(line) == LoginEvent(
@@ -25,7 +23,7 @@ def test_failed_password_invalid_user():
     line = "Oct 24 14:02:15 web01 sshd[2232]: Failed password for invalid user admin from 203.0.113.45 port 52350 ssh2"
     event = parse_line(line)
     assert event is not None
-    assert event.username == "admin"  # NOT "invalid"
+    assert event.username == "admin"
     assert event.invalid_user is True
     assert event.success is False
 
@@ -68,8 +66,6 @@ def test_different_hostname():
     assert event.ip == "203.0.113.45"
 
 
-# --- lines that are NOT login attempts (noise) -------------------------------
-
 @pytest.mark.parametrize(
     "line",
     [
@@ -87,8 +83,6 @@ def test_noise_lines_return_none(line):
     assert parse_line(line) is None
 
 
-# --- the whole sample file ---------------------------------------------------
-
 def test_parse_sample_file():
     events = parse_file(SAMPLE_LOG)
 
@@ -100,5 +94,4 @@ def test_parse_sample_file():
     assert sum(not e.success for e in break_in) == 7
     assert sum(e.success for e in break_in) == 1
 
-    # events come back sorted by time
     assert events == sorted(events, key=lambda e: e.timestamp)

@@ -21,10 +21,6 @@ def ok(minutes: float, ip: str = "203.0.113.1", user: str = "root") -> LoginEven
     return LoginEvent(T0 + timedelta(minutes=minutes), ip, user, success=True)
 
 
-# =============================================================================
-# Rule 1: brute force
-# =============================================================================
-
 def test_brute_force_triggers_at_threshold():
     events = [fail(m) for m in (0, 1, 2, 3, 4)]
     alerts = detect_brute_force(events)
@@ -45,13 +41,11 @@ def test_brute_force_below_threshold():
 
 
 def test_brute_force_too_spread_out():
-    # 5 failures, but 3 minutes apart -> any 10-minute window holds at most 4
     events = [fail(m) for m in (0, 3, 6, 9, 12)]
     assert detect_brute_force(events) == []
 
 
 def test_brute_force_window_edge_is_inclusive():
-    # last failure lands exactly 10:00 after the first -> still inside the window
     events = [fail(m) for m in (0, 1, 2, 3, 10)]
     assert len(detect_brute_force(events)) == 1
 
@@ -69,8 +63,8 @@ def test_brute_force_one_alert_per_ip():
 
 
 def test_brute_force_reports_biggest_burst():
-    small = [fail(m) for m in (0, 1, 2, 3, 4, 5)]               # 6 failures
-    big = [fail(120 + m) for m in (0, 1, 2, 3, 4, 5, 6, 7, 8)]  # 9 failures, 2 hours later
+    small = [fail(m) for m in (0, 1, 2, 3, 4, 5)]
+    big = [fail(120 + m) for m in (0, 1, 2, 3, 4, 5, 6, 7, 8)]
     alerts = detect_brute_force(small + big)
     assert len(alerts) == 1
     assert alerts[0].count == 9
@@ -83,7 +77,6 @@ def test_brute_force_separate_ips():
 
 
 def test_brute_force_does_not_mix_ips():
-    # 3 + 3 failures from two IPs: neither IP alone reaches 5
     events = [fail(m, ip="203.0.113.1") for m in range(3)] + [fail(m, ip="203.0.113.2") for m in range(3)]
     assert detect_brute_force(events) == []
 
@@ -106,10 +99,6 @@ def test_brute_force_usernames_sorted_unique():
     events = [fail(i, user=u) for i, u in enumerate(users)]
     assert detect_brute_force(events)[0].usernames == ["admin", "root", "ubuntu"]
 
-
-# =============================================================================
-# Rule 2: password spray
-# =============================================================================
 
 def test_spray_triggers_on_many_usernames():
     users = ["admin", "test", "oracle", "postgres", "ubuntu"]
@@ -142,10 +131,6 @@ def test_spray_one_alert_per_ip():
     events = [fail(i * 0.2, user=f"user{i}") for i in range(20)]
     assert len(detect_password_spray(events)) == 1
 
-
-# =============================================================================
-# Rule 3: success after failures (possible break-in)
-# =============================================================================
 
 def test_break_in_detected():
     events = [fail(m, user="deploy") for m in (0, 1, 2, 3, 4)] + [ok(5, user="deploy")]
@@ -186,8 +171,8 @@ def test_break_in_success_from_other_ip_does_not_count():
 
 
 def test_break_in_only_counts_failures_inside_window():
-    old = [fail(m) for m in (0, 1, 2)]                # 20 minutes before the success
-    recent = [fail(m) for m in (15, 16, 17, 18, 19)]  # within 10 minutes of the success
+    old = [fail(m) for m in (0, 1, 2)]
+    recent = [fail(m) for m in (15, 16, 17, 18, 19)]
     alerts = detect_success_after_failures(old + recent + [ok(20)])
     assert len(alerts) == 1
     assert alerts[0].count == 5
@@ -207,10 +192,6 @@ def test_break_in_one_alert_per_ip():
     assert len(detect_success_after_failures(events)) == 1
 
 
-# =============================================================================
-# Everything together on the sample log
-# =============================================================================
-
 def test_sample_log_finds_the_hidden_attacks():
     alerts = run_all_rules(parse_file(SAMPLE_LOG))
     found = {(a.rule, a.ip) for a in alerts}
@@ -219,10 +200,8 @@ def test_sample_log_finds_the_hidden_attacks():
     assert ("brute_force", "203.0.113.45") in found
     assert ("password_spray", "192.0.2.77") in found
 
-    # the slow attacker and the normal users should NOT trigger anything
     flagged_ips = {a.ip for a in alerts}
     assert "198.51.100.200" not in flagged_ips
     assert not any(ip.startswith("198.51.100.") for ip in flagged_ips)
 
-    # most severe alert comes first
     assert alerts[0].severity == "CRITICAL"

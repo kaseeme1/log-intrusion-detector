@@ -37,7 +37,7 @@ def test_report_shows_alert():
     text = format_report(EVENTS, [ALERT], color=False)
     assert "[HIGH] brute_force" in text
     assert "203.0.113.1" in text
-    assert "\033[" not in text  # no color codes when color=False
+    assert "\033[" not in text
 
 
 def test_report_without_alerts():

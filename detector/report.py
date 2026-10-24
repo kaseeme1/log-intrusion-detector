@@ -1,4 +1,4 @@
-"""Turns alerts into a readable terminal report and a JSON file."""
+"""Terminal and JSON reporting for detection results."""
 
 from __future__ import annotations
 
@@ -11,10 +11,10 @@ from detector.parser import LoginEvent
 from detector.rules import Alert
 
 COLORS = {
-    "CRITICAL": "\033[1;97;41m",  # bold white on red
-    "HIGH": "\033[1;31m",         # bold red
-    "MEDIUM": "\033[33m",         # yellow
-    "LOW": "\033[36m",            # cyan
+    "CRITICAL": "\033[1;97;41m",
+    "HIGH": "\033[1;31m",
+    "MEDIUM": "\033[33m",
+    "LOW": "\033[36m",
 }
 RESET = "\033[0m"
 

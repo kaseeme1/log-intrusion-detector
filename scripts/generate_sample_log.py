@@ -1,21 +1,8 @@
 """
-Generates a realistic fake Linux auth.log with known attacks hidden inside it,
-so the detector can be tested without a real server.
-
-All IP addresses come from the ranges reserved for documentation
-(192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24), so none of them belong
-to real people.
-
-What's hidden in the log:
-    203.0.113.45   brute force      40 failed root/admin logins in ~3 minutes
-    192.0.2.77     password spray   12 different usernames, one try each
-    203.0.113.99   BREAK-IN         7 failures on "deploy", then a successful login
-    198.51.100.200 slow and low     6 failures, but 15 minutes apart (should NOT alert)
-    everyone else  normal users     daily logins, the odd typo, cron and sudo noise
+Generate a synthetic auth.log containing known attack patterns.
 
 Usage:
-    python scripts/generate_sample_log.py                 # writes sample_logs/auth.log
-    python scripts/generate_sample_log.py -o my.log --seed 7
+    python scripts/generate_sample_log.py [-o OUTPUT] [--seed N]
 """
 
 from __future__ import annotations
@@ -53,7 +40,6 @@ class LogWriter:
         return self.rng.randint(32768, 60999)
 
     def _stamp(self, t: datetime) -> str:
-        # syslog style: "Oct 24 14:02:11" (day padded with a space if single digit)
         return f"{t:%b} {t.day:>2} {t:%H:%M:%S}"
 
     def add(self, t: datetime, text: str) -> None:
@@ -62,7 +48,7 @@ class LogWriter:
     def ssh_fail(self, t: datetime, user: str, ip: str, invalid: bool = False) -> None:
         pid, port = self._pid(), self._port()
         who = f"invalid user {user}" if invalid else user
-        if invalid:  # real sshd logs this line first
+        if invalid:
             self.add(t, f"sshd[{pid}]: Invalid user {user} from {ip} port {port}")
         self.add(t, f"sshd[{pid}]: Failed password for {who} from {ip} port {port} ssh2")
         self.add(t + timedelta(seconds=1),
@@ -86,13 +72,12 @@ def normal_day(w: LogWriter) -> None:
     for user, ip in NORMAL_USERS.items():
         for _ in range(rng.randint(3, 6)):
             t = START + timedelta(minutes=rng.randint(0, 14 * 60))
-            if rng.random() < 0.25:  # a fat-fingered password, then success
+            if rng.random() < 0.25:
                 w.ssh_fail(t, user, ip)
                 t += timedelta(seconds=rng.randint(5, 20))
             method = "publickey" if user in ("deploy", "backup") else "password"
             w.ssh_ok(t, user, ip, method)
 
-    # background noise every few minutes
     t = START
     while t < START + timedelta(hours=14):
         w.add(t, f"CRON[{w._pid()}]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)")
